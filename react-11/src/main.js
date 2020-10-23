@@ -13,9 +13,9 @@ const App = () => {
 
   return (
     <div>
-      <MultiInput/>
+      {/* <MultiInput/> */}
       {/* <TimeUnits/> */}
-      {/* <GuessingNumberGame /> */}
+      <GuessingNumberGame />
       {/* <InputColor initColor={'black'}/> */}
       {/* <ColorPallet  initColor={'red'}/> */}
     </div>

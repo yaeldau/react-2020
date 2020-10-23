@@ -5,25 +5,13 @@ export default class GuessingNumberGame extends React.Component {
   constructor(props) {
       super(props);
         this.state = {
-            ans: 0,
-            guess: 0
+            ans: this.getRandomNumber(1, 1000),
+            guess: 0,
         }
   }
 
-  componentDidMount() {
-    const random = this.getRandomNumber();
-    this.setState({ans : random})
-    }
-
-  getRandomNumber() {
-    const min = 1;
-    const max = 1000;
+  getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  checkGuess(e) {
-    let currentGuess = Number(e.target.value);
-    this.setState({guess: currentGuess});
   }
 
   showMsg(guess, ans) {
@@ -48,8 +36,8 @@ export default class GuessingNumberGame extends React.Component {
 
     return (
         <div>
-            <text>Enter your guess: </text>
-            <input onChange={(e) => this.checkGuess(e)}/>
+            <p>Enter your guess: </p>
+            <input onChange={e => this.setState({guess: Number(e.target.value)})}/>
             {this.showMsg(guess, ans)}
       </div>
     );

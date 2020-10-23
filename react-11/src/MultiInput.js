@@ -19,8 +19,8 @@ export default class MultiInput extends React.Component {
 []
     return (
         <div>
-          {[...Array(numberOfInputs).keys()].map(() => 
-          <input onChange={(e) => this.setText(e)} value={text}/>)}
+          {[...Array(numberOfInputs).keys()].map((o, i) => 
+          <input key={i} onChange={(e) => this.setText(e)} value={text}/>)}
       </div>
     );
   }

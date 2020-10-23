@@ -13,11 +13,20 @@ const App = () => {
 
   return (
     <div>
-      {/* <MultiInput/> */}
-      {/* <TimeUnits/> */}
+      <p>ex. 1</p>
+      <MultiInput />
+      <br/>
+      <p>ex. 2</p>
+      <TimeUnits/>
+      <br/>
+      <p>ex. 3</p>
       <GuessingNumberGame />
-      {/* <InputColor initColor={'black'}/> */}
-      {/* <ColorPallet  initColor={'red'}/> */}
+      <br/>
+      <p>ex. 4</p>
+      <InputColor initColor={'black'}/>
+      <br/>
+      <p>ex. 5</p>
+      <ColorPallet  initColor={'red'}/>
     </div>
   )
 };

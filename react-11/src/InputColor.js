@@ -5,7 +5,7 @@ export default class InputColor extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-        color: props.initColor
+            color: props.initColor
         }
     }
 

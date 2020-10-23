@@ -13,11 +13,11 @@ const App = () => {
 
   return (
     <div>
-      {/* <MultiInput/> */}
+      <MultiInput/>
       {/* <TimeUnits/> */}
       {/* <GuessingNumberGame /> */}
       {/* <InputColor initColor={'black'}/> */}
-      <ColorPallet  initColor={'red'}/>
+      {/* <ColorPallet  initColor={'red'}/> */}
     </div>
   )
 };

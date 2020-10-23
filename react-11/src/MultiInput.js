@@ -4,6 +4,7 @@ export default class MultiInput extends React.Component {
   constructor(props) {
       super(props);
         this.state = {
+            numberOfInputs: 5,
             text: "type something..."
         }
   }
@@ -14,23 +15,12 @@ export default class MultiInput extends React.Component {
 
   render() {
 
-    const {text} = this.state;
-
+    const {text, numberOfInputs} = this.state;
+[]
     return (
         <div>
-            <input onChange={(e) => this.setText(e)} value={text}/>
-            <br/>
-            <br/>
-            <input onChange={(e) => this.setText(e)} value={text}/>
-            <br/>
-            <br/>
-            <input onChange={(e) => this.setText(e)} value={text}/>
-            <br/>
-            <br/>
-            <input onChange={(e) => this.setText(e)} value={text}/>
-            <br/>
-            <br/>
-            <input onChange={(e) => this.setText(e)} value={text}/>
+          {[...Array(numberOfInputs).keys()].map(() => 
+          <input onChange={(e) => this.setText(e)} value={text}/>)}
       </div>
     );
   }

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 import '../css/main.css';
+import ColorPallet from './ColorPallet';
 import GuessingNumberGame from './GuessingNumberGame';
 import InputColor from './InputColor';
 import MultiInput from './MultiInput';
@@ -15,7 +16,8 @@ const App = () => {
       {/* <MultiInput/> */}
       {/* <TimeUnits/> */}
       {/* <GuessingNumberGame /> */}
-      <InputColor initColor={'black'}/>
+      {/* <InputColor initColor={'black'}/> */}
+      <ColorPallet  initColor={'red'}/>
     </div>
   )
 };
